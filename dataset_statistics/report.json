@@ -1,0 +1,56 @@
+{
+    "train": {
+        "images": 9963,
+        "empty_labels": 3,
+        "objects": 181145,
+        "invalid_files": 0,
+        "invalid_lines": 0,
+        "invalid_boxes": 0,
+        "invalid_classes": 0,
+        "avg_objects": 18.18,
+        "max_objects": 83,
+        "min_objects": 0
+    },
+    "validation": {
+        "images": 2491,
+        "empty_labels": 1,
+        "objects": 44922,
+        "invalid_files": 0,
+        "invalid_lines": 0,
+        "invalid_boxes": 0,
+        "invalid_classes": 0,
+        "avg_objects": 18.03,
+        "max_objects": 62,
+        "min_objects": 0
+    },
+    "test": {
+        "images": 5000,
+        "empty_labels": 0,
+        "objects": 86870,
+        "invalid_files": 0,
+        "invalid_lines": 0,
+        "invalid_boxes": 0,
+        "invalid_classes": 0,
+        "avg_objects": 17.37,
+        "max_objects": 66,
+        "min_objects": 1
+    },
+    "train_class_distribution": {
+        "traffic light": 20987,
+        "traffic sign": 34953,
+        "car": 111484,
+        "pedestrian": 13721
+    },
+    "validation_class_distribution": {
+        "car": 27790,
+        "traffic sign": 8610,
+        "traffic light": 5288,
+        "pedestrian": 3234
+    },
+    "test_class_distribution": {
+        "car": 48952,
+        "traffic sign": 17178,
+        "pedestrian": 6681,
+        "traffic light": 14059
+    }
+}

@@ -1,0 +1,51 @@
+YOLO Dataset Verification Report
+==================================================
+
+TRAIN
+----------------------------------------
+Images: 9963
+Objects: 181145
+Average objects/image: 18.18
+Empty labels: 3
+Invalid classes: 0
+Invalid boxes: 0
+Invalid lines: 0
+
+Class distribution
+traffic light: 20987
+traffic sign: 34953
+car: 111484
+pedestrian: 13721
+
+VALIDATION
+----------------------------------------
+Images: 2491
+Objects: 44922
+Average objects/image: 18.03
+Empty labels: 1
+Invalid classes: 0
+Invalid boxes: 0
+Invalid lines: 0
+
+Class distribution
+car: 27790
+traffic sign: 8610
+traffic light: 5288
+pedestrian: 3234
+
+TEST
+----------------------------------------
+Images: 5000
+Objects: 86870
+Average objects/image: 17.37
+Empty labels: 0
+Invalid classes: 0
+Invalid boxes: 0
+Invalid lines: 0
+
+Class distribution
+car: 48952
+traffic sign: 17178
+pedestrian: 6681
+traffic light: 14059
+
