@@ -1,0 +1,12 @@
+model: runs/detect/experiments/baseline/weights/best.pt
+
+test_csv: splits/split_test.csv
+
+images: bdd100k/bdd100k/images/100k/train
+
+project: runs/predict
+name: yolo11n
+
+confidence: 0.25
+imgsz: 640
+device: 0

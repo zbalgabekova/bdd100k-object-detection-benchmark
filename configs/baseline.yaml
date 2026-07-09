@@ -1,0 +1,36 @@
+# Dataset
+data: dataset/dataset.yaml
+
+# Model
+model_type: yolo
+model: yolo11n.pt
+
+# Training
+epochs: 50
+batch: 8
+imgsz: 640
+workers: 8
+device: auto
+
+# Optimizer
+optimizer: auto
+lr0: 0.01
+weight_decay: 0.0005
+
+# Augmentation
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+
+degrees: 0
+translate: 0.1
+scale: 0.5
+fliplr: 0.5
+
+# Saving
+project: experiments
+name: baseline
+exist_ok: true
+
+# Reproducibility
+seed: 42

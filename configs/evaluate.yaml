@@ -1,0 +1,7 @@
+predictions: runs/predict/yolo11n/predictions.csv
+
+ground_truth: data/test_ground_truth.csv
+
+output: runs/evaluation/yolo11n
+
+iou_threshold: 0.5
