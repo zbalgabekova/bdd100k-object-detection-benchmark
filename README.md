@@ -52,7 +52,7 @@ Only the object detection task is used. The benchmark focuses on four object cat
 - Traffic Light
 - Traffic Sign
 
-  ### Dataset Split
+### Dataset Split
 
 Unlike the standard BDD100K split, this project creates a custom train/validation/test partition to evaluate model robustness under different environmental conditions.
 
