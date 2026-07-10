@@ -37,7 +37,7 @@ The project includes:
 Currently supported models:
 
 - YOLO11n (done)
-- YOLO11s (in the process)
+- YOLO11s (done)
 - RT-DETR (in the process)
 
 ---
