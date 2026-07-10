@@ -49,3 +49,20 @@ Only the object detection task is used.
 
 ---
 
+## Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/zbalgabekova/bdd100k-object-detection-benchmark.git
+
+cd bdd100k-object-detection-benchmark
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
