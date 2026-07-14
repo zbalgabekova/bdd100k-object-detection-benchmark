@@ -149,6 +149,41 @@ python scripts/create_splits.py --metadata outputs/metadata.csv --output splits 
 python scripts/convert_to_yolo.py --train_csv splits/split_train.csv --val_csv splits/split_val.csv --test_csv splits/split_test.csv --labels det_v2_train_release.json --images bdd100k/bdd100k/images/100k/train
 ```
 
+### 4. Verify dataset
+
+```bash
+python scripts/verify_yolo_dataset.py --dataset dataset
+```
+
+### 5. Train model
+
+```bash
+python scripts/train.py --config configs/baseline.yaml
+```
+
+### 6. Generate predictions
+
+```bash
+python scripts/predict.py --config configs/predict.yaml
+```
+
+### 7. Create ground truth for evaluation
+
+```bash
+python scripts/create_test_ground_truth.py --annotations det_v2_train_release.json --test_csv splits/split_test.csv --output data/test_ground_truth.csv
+```
+
+### 8. Evaluate model
+
+```bash
+python scripts/evaluate.py --config configs/evaluate.yaml
+```
+
+### 9. Compare models
+
+```bash
+python scripts/compare_models.py
+```
 
 
 
