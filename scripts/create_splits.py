@@ -1,7 +1,7 @@
 """
 create_splits.py
 
-Create train/validation splits from metadata.csv.
+Create train/validation/test splits from metadata.csv.
 """
 
 from __future__ import annotations
