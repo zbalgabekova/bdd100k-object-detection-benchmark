@@ -217,12 +217,6 @@ The benchmark compares:
 | YOLO11s |0.6606 |0.5430 |0.5960 |0.7779 |
 | RT-DETR |0.4031 |0.7850 |0.5327 |0.7624 |
 
-Best Models
-------------------------------------------------------------
-Highest Precision : YOLO11s (0.6606)
-Highest Recall    : RT-DETR (0.7850)
-Highest F1-score  : YOLO11s (0.5960)
-Highest Mean IoU  : YOLO11s (0.7779)
 
 ---
 
