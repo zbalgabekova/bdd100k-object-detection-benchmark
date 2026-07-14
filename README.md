@@ -14,12 +14,15 @@ The main objective is to compare the performance of different object detectors u
 - 🌙 Time of day (daytime, night, dawn/dusk)
 - 🛣️ Road scene (city street, highway, residential, etc.)
 
+---
+
 ## Motivation
 
 Object detectors are typically evaluated on overall benchmark metrics. However, real-world driving environments vary significantly in weather, illumination, and scene complexity.
 
 This project investigates how detector performance changes under different environmental conditions using the BDD100K dataset. The goal is to provide a more comprehensive assessment of model robustness beyond standard validation metrics.
 
+---
 
 The project includes:
 
@@ -36,9 +39,9 @@ The project includes:
 
 Currently supported models:
 
-- YOLO11n (done)
-- YOLO11s (done)
-- RT-DETR (in the process)
+- YOLO11n 
+- YOLO11s 
+- RT-DETR 
 
 ---
 
