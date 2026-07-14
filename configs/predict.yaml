@@ -8,5 +8,5 @@ project: runs/predict
 name: yolo11n
 
 confidence: 0.25
-imgsz: 640
+imgsz: 512
 device: 0
