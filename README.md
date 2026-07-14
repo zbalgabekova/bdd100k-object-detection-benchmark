@@ -282,6 +282,30 @@ Examples:
 
 ---
 
+## Future Work
+
+Several directions can further improve and extend this benchmark:
+
+- **Train on all weather and lighting conditions.** Compare model performance when trained on the complete BDD100K dataset instead of only clear daytime images.
+
+- **Evaluate additional object detectors.** Extend the benchmark by including recent models such as YOLOv12, YOLOv13 (when available), YOLO-NAS, D-FINE, or other state-of-the-art real-time detectors.
+
+- **Perform hyperparameter optimization.** Investigate the influence of image size, confidence threshold, IoU threshold, batch size, and training epochs on detection performance.
+
+- **Evaluate computational efficiency.** Compare inference speed (FPS), GPU memory consumption, model size, and training time in addition to detection accuracy.
+
+- **Analyze performance on individual object classes.** Conduct a more detailed study of challenging classes such as pedestrians, traffic lights, and traffic signs under different environmental conditions.
+
+- **Extend the evaluation metrics.** Include mAP@0.5, mAP@0.5:0.95, precision-recall curves, confusion matrices, and calibration analysis for a more comprehensive comparison.
+
+- **Investigate domain adaptation.** Study how models trained on daytime images can be adapted to night-time or adverse weather conditions using fine-tuning or domain adaptation techniques.
+
+- **Benchmark on additional datasets.** Validate the findings on other autonomous driving datasets such as Cityscapes, KITTI, Mapillary Vistas, or nuScenes to evaluate model generalization.
+
+- **Develop an automated benchmarking framework.** Package the training, evaluation, and comparison scripts into a reproducible pipeline that allows researchers to benchmark new object detection models with minimal configuration.
+
+---
+
 ## License
 
 This project is released under the MIT License.
