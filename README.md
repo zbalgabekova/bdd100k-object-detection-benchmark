@@ -185,5 +185,71 @@ python scripts/evaluate.py --config configs/evaluate.yaml
 python scripts/compare_models.py
 ```
 
+---
 
+## Evaluation
+
+The evaluation pipeline computes:
+
+- True Positives
+- False Positives
+- False Negatives
+- Precision
+- Recall
+- F1-score
+- Mean IoU
+
+Additionally, performance is reported separately for:
+
+- Weather
+- Time of day
+- Road scene
+
+---
+
+## Results
+
+The benchmark compares:
+
+| Model | Precision | Recall | F1 | Mean IoU |
+|--------|----------:|-------:|---:|---------:|
+| YOLO11n |0.6194|0.4675|0.5328 |0.7752 |
+| YOLO11s |0.6606 |0.5430 |0.5960 |0.7779 |
+| RT-DETR |0.4031 |0.7850 |0.5327 |0.7624 |
+
+Best Models
+------------------------------------------------------------
+Highest Precision : YOLO11s (0.6606)
+Highest Recall    : RT-DETR (0.7850)
+Highest F1-score  : YOLO11s (0.5960)
+Highest Mean IoU  : YOLO11s (0.7779)
+
+---
+
+## Configuration
+
+All scripts use YAML configuration files stored in:
+
+```
+configs/
+```
+
+Examples:
+
+- baseline.yaml
+- predict.yaml
+- evaluate.yaml
+
+---
+
+## License
+
+This project is released under the MIT License.
+
+---
+
+## Acknowledgements
+
+- BDD100K dataset
+- Ultralytics
 
