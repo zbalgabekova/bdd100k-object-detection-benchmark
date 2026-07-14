@@ -209,7 +209,9 @@ Additionally, performance is reported separately for:
 
 ## Results
 
-The benchmark compares:
+The benchmark compares the performance of three object detection models trained on clear daytime images and evaluated on a test set containing diverse weather, lighting, and scene conditions.
+
+### Overall Performance
 
 | Model | Precision | Recall | F1 | Mean IoU |
 |--------|----------:|-------:|---:|---------:|
@@ -217,6 +219,50 @@ The benchmark compares:
 | YOLO11s |**0.6606** |0.5430 |**0.5960** |**0.7779** |
 | RT-DETR |0.4031 |**0.7850** |0.5327 |0.7624 |
 
+> **Best values are shown in bold.**
+
+YOLO11s achieved the best overall balance between Precision and Recall, resulting in the highest F1-score and Mean IoU. RT-DETR obtained the highest Recall but generated substantially more false positives, leading to lower Precision.
+
+<p align="center">
+  <img src="images/overall_metrics.png" width="900">
+</p>
+
+---
+
+### Performance under Different Weather Conditions
+
+The models generalized well across different weather conditions. Performance differences between clear, rainy, snowy, and overcast scenes were relatively small.
+
+<p align="center">
+  <img src="images/weather_comparison.png" width="900">
+</p>
+
+
+### Performance under Different Lighting Conditions
+
+Lighting conditions had a much stronger impact than weather. All models experienced a noticeable decrease in performance during night-time scenes, demonstrating that illumination is a more challenging factor for object detection than weather.
+
+<p align="center">
+  <img src="images/timeofday_comparison.png" width="900">
+</p>
+
+
+### Performance in Different Road Scenes
+
+The benchmark also evaluated performance across different road environments, including city streets, highways, and residential areas. The differences were smaller than those caused by lighting conditions.
+
+<p align="center">
+  <img src="images/scene_comparison.png" width="900">
+</p>
+
+
+### Key Findings
+
+- **YOLO11s** achieved the best overall performance, obtaining the highest Precision, F1-score, and Mean IoU.
+- **RT-DETR** achieved the highest Recall by detecting significantly more objects, but produced many more false positives.
+- **Night-time** scenes were considerably more challenging than daytime scenes for all models.
+- **Weather conditions** had only a moderate influence on performance compared with lighting conditions.
+- Increasing model capacity from **YOLO11n** to **YOLO11s** consistently improved detection performance.
 
 ---
 
