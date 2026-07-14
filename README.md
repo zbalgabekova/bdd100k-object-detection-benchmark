@@ -128,3 +128,19 @@ pip install -r requirements.txt
 ```
 
 ---
+
+## Pipeline
+
+### 1. Compute dataset statistics, generate metadata, and produce distribution plots
+
+```bash
+python scripts/prepare_dataset.py
+```
+
+### 2. Create dataset splits
+
+```bash
+python scripts/create_splits.py --metadata outputs/metadata.csv --output splits --weather clear --timeofday daytime
+```
+
+
