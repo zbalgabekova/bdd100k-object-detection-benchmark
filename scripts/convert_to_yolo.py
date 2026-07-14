@@ -5,7 +5,7 @@ Convert BDD100K detection annotations to YOLO format.
 
 Features
 --------
-- Reads train/validation splits from CSV
+- Reads train/validation/test splits from CSV
 - Converts BDD100K boxes to YOLO labels
 - Copies images
 - Generates dataset.yaml
